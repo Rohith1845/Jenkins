@@ -20,5 +20,10 @@ pipeline {
                 echo "deploying"
             }
         }
+    post {
+        always {
+            echo "I'm the end"
+        }
+    }
     }
 }
