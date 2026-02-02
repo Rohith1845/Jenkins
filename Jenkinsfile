@@ -24,6 +24,13 @@ pipeline {
     post {
         always {
             echo "I'm the end"
+            cleanWs()
+        }
+        success{
+            echo    "Im the success"
+        }
+        failure{
+            echo    "im the failure"
         }
     }
 }
